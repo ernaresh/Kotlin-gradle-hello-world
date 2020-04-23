@@ -26,7 +26,7 @@ dependencies {
 }
 
 jar {
-  manifest { attributes 'Main-Class': 'demo.HelloWorldKt' }
+  manifest { attributes 'Main-Class': 'org.jetbrains.ktor.netty.DevelopmentHost' }
   from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 }
 
